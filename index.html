@@ -23,6 +23,15 @@ John,20,$2000
 Sarah,30,$3000
 Rock,40,$4000`;
 
+	const lines = csvData.split( '\n' );
+	const tableHeader = lines[ 0 ].split( ',' );
+
+	let tableData = '<tr>';
+
+	for ( let i = 0; i < tableHeader.length; i++ )
+	{
+		tableData += `<th>${ tableHeader[ i ] }</th>`;
+	}
 </script>
 </body>
 </html>

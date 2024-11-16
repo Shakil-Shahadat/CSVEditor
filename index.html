@@ -32,6 +32,9 @@ Rock,40,$4000`;
 	{
 		tableData += `<th>${ tableHeader[ i ] }</th>`;
 	}
+
+	document.querySelector( 'table' ).insertAdjacentHTML( 'beforeend', tableData );
+
 </script>
 </body>
 </html>

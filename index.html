@@ -35,6 +35,20 @@ Rock,40,$4000`;
 
 	tableData += '</tr>';
 
+	for ( let j = 1; j < lines.length; j++ )
+	{
+		const tableRow = lines[ j ].split( ',' );
+
+		tableData += '<tr>';
+
+		for ( let k = 0; k < tableRow.length; k++ )
+		{
+			tableData += `<td>${ tableRow[ k ] }</td>`;
+		}
+
+		tableData += '</tr>';
+	}
+
 	document.querySelector( 'table' ).insertAdjacentHTML( 'beforeend', tableData );
 
 </script>
